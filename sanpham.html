@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Cake & Drink</title>
+  <link rel="icon" type="image/x-icon" href="/img/img2.jpg">
+  <!-- OwlCarouse-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/sanpham.css">
+  <link rel="stylesheet" href="/css/modal.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="contact_header">
+              <span>Hotline: </span>
+              <a class="fone" href="tel:19006759">1900 6750</a>
+            </div>
+          </div>
+          <div class="col-6 login-signUp">
+            <div class="row">
+              <div class="header_search col-8">
+                <input type="text" name="" placeholder="Tìm sản phẩm" required>
+                <button class="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="account_header col-4">
+                <a href="/dangnhap.html">Đăng nhập</a>
+                <span> & </span>
+                <a href="/dangki.html">Đăng kí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg px-0">
+          <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.jpg" alt="">
+          </a>
+          <!-- nút menu khi màn hình chuyển sang điện thoại thì hiện ra -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!--  thanh điều hướng-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html"><i class="fa-solid fa-house"></i> Trang chủ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./sanpham.html">
+                  <i class="fa-solid fa-cake-candles"></i> Sản phẩm <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="sub-nav">
+                  <li><a href="#">Món ăn nổi bật</a></li>
+                  <li><a href="#">Món ăn ưa chộng</a></li>
+                  <li><a href="#">Món ăn mới</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gioithieu.html"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html"><i class="fa-solid fa-pen-to-square"></i> Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lienhe.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+              </li>
+            </ul>
+            <!-- giỏ hàng -->
+            <div class="header-cart">
+              <a class="" href="/giohang.html">
+                <div class="header-cart-left mr-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="quantity cart_qty">2</span>
+                </div>
+              </a>
+              <div class="header-cart-right">
+                <h6 class="text-cart mb-1">GIỎ HÀNG</h6>
+                <span class="block-count">(<span class="quantity">2</span>) sản phẩm</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- sản phẩm -->
+  <section class="sanPham">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li>
+          <a href="/index.html">Trang chủ</a>
+        </li>
+        <span>&nbsp;/&nbsp;</span>
+        <li>Tất cả sản phẩm</li>
+      </ul>
+      <div class="row">
+        <div class="col-lg-3 DanhMucSP">
+          <!-- danh mục các trang page -->
+          <div class="group-item mb-5">
+            <div class="danhmuc-title">
+              <i class="fa-solid fa-cake-candles"></i> <span>DANH MỤC</span>
+            </div>
+            <ul class="danhmuc-content">
+              <li class="danhmuc-item"><a href="./index.html">Trang chủ</a></li>
+              <li class="danhmuc-item"><a href="./sanpham.html">Sản phẩm</a></li>
+              <li class="danhmuc-item"><a href="./gioithieu.html">Giới thiệu</a></li>
+              <li class="danhmuc-item"><a href="./blog.html">Blog</a></li>
+              <li class="danhmuc-item"><a href="./lienhe.html">Liên hệ</a></li>
+            </ul>
+          </div>
+          <!-- danh mục món ăn nỗi bật -->
+          <div class="group-item">
+            <div class="danhmuc-title">
+              <i class="fa-solid fa-cake-candles"></i> <span>MÓN ĂN NỔI BẬT</span>
+            </div>
+            <ul class="danhmuc-content list-product">
+              <li class="danhmuc-item">
+                <div class="row">
+                  <div class="col-5">
+                    <a href=""><img class="img-fluid" src="/img/img1.jpg" alt=""></a>
+                  </div>
+                  <div class="product-info col-7 pl-0">
+                    <h6><a class="product-name" href="#">Lamington</a></h6>
+                    <div class="price">
+                      <span class="price-new">300.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="danhmuc-item">
+                <div class="row">
+                  <div class="col-5">
+                    <a href=""><img class="img-fluid" src="/img/img2.jpg" alt=""></a>
+                  </div>
+                  <div class="product-info col-7 pl-0">
+                    <h6><a class="product-name" href="#">Strawberry Cake</a></h6>
+                    <div class="price">
+                      <span class="price-new">500.000đ</span>
+                      <span class="price-old">519.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="danhmuc-item">
+                <div class="row">
+                  <div class="col-5">
+                    <a href=""><img class="img-fluid" src="/img/img3.jpg" alt=""></a>
+                  </div>
+                  <div class="product-info col-7 pl-0">
+                    <h6><a class="product-name" href="#">Sweet Potato Tart</a></h6>
+                    <div class="price">
+                      <span class="price-new">Liên hệ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="danhmuc-item">
+                <div class="row">
+                  <div class="col-5">
+                    <a href=""><img class="img-fluid" src="/img/img9.jpg" alt=""></a>
+                  </div>
+                  <div class="product-info col-7 pl-0">
+                    <h6><a class="product-name" href="#">Fruit Cream Pufft</a></h6>
+                    <div class="price">
+                      <span class="price-new">150.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="danhmuc-item">
+                <div class="row">
+                  <div class="col-5">
+                    <a href=""><img class="img-fluid" src="/img/img8.jpg" alt=""></a>
+                  </div>
+                  <div class="product-info col-7 pl-0">
+                    <h6><a class="product-name" href="#">Espresso Con Pannaaaaaaaaaaaaaaaaa</a></h6>
+                    <div class="price">
+                      <span class="price-new">150.000đ</span>
+                      <span class="price-old">165.000đ</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-9 AllSanPham">
+          <h4>TẤT CẢ SẢN PHẨM</h4>
+          <!-- thanh navbar -->
+          <div class="navBar">
+            <div class="row">
+              <div class="col-6">
+                <span>Sắp xếp theo:</span>
+                <select id="" class="select form-control d-inline-block">
+                  <option>Thứ tự</option>
+                  <option>Mặc định</option>
+                  <option>A-Z</option>
+                  <option>Z-A</option>
+                  <option>Giá tăng dần</option>
+                  <option>Giá giảm dần</option>
+                  <option>Hàng mới nhất</option>
+                  <option>Hàng cũ nhất</option>
+                </select>
+              </div>
+              <div class="col-6 view-mode">
+                <button class="listview"><i class="grid fa-solid fa-list"></i></button>
+                <button class="gridview active"><i class="grid fa-solid fa-grip"></i></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- all sản phẩm -->
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img1.jpg" alt=""></a>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Lamington</a>
+                  <div class="price">
+                    <span class="price-new">300.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img2.jpg" alt=""></a>
+                  <span class="discount">- 4%</span>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Strawberry Cake</a>
+                  <div class="price">
+                    <span class="price-new">500.000đ</span>
+                    <span class="price-old">519.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img3.jpg" alt=""></a>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Sweet Potato Tart</a>
+                  <div class="price">
+                    <span class="price-new">Liên hệ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img9.jpg" alt=""></a>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Fruit Cream Pufft</a>
+                  <div class="price">
+                    <span class="price-new">150.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img8.jpg" alt=""></a>
+                  <span class="discount">- 7%</span>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Espresso Con Panna</a>
+                  <div class="price">
+                    <span class="price-new">150.000đ</span>
+                    <span class="price-old">165.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img7.jpg" alt=""></a>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Strawberry Frappuccino</a>
+                  <div class="price">
+                    <span class="price-new">150.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img6.jpg" alt=""></a>
+                  <span class="discount">- 4%</span>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Honey Wheat</a>
+                  <div class="price">
+                    <span class="price-new">45.000đ</span>
+                    <span class="price-old">50.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img5.jpg" alt=""></a>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Sample Product</a>
+                  <div class="price">
+                    <span class="price-new">Liên hệ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="product-item">
+                <div class="product-img">
+                  <a class="image" href=""><img class="img-fluid" src="/img/img4.jpg" alt=""></a>
+                  <span class="discount">- 4%</span>
+                  <div class="product-action">
+                    <button href="" class="btn_view">
+                      <i class="fa-regular fa-eye"></i>
+                    </button>
+                    <button class="btn_cart">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a class="product-name" href="#">Chocolate Iced</a>
+                  <div class="price">
+                    <span class="price-new">100.000đ</span>
+                    <span class="price-old">120.000đ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--nút chuyển trang -->
+          <nav class="col-12" aria-label="navigation">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link active" href="/sanpham.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="/sanpham2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="/sanpham2.html">
+                  <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Liên hệ</h5>
+          <div class="address">
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="content-address">266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, Hà Nội, Vietnam</div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="content-address">
+                <a href="tel:19006750">1900 6750</a>
+                <p>Thứ 2 - Chủ Nhật 9:00 - 18:00</p>
+              </div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="content-address">
+                <a href="mailto:0308201080@caothang.edu.vn">0308201080@caothang.edu.vn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Hỗ trợ khách hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Chính sách mua hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">ĐĂNG KÝ NHẬN TIN</h5>
+          <p class="description">Đăng ký nhận thông tin khuyến mãi và món ăn mới</p>
+          <input type="text" class="form-control" placeholder="Nhập email của bạn">
+          <button class="btnDangki">ĐĂNG KÍ</button>
+        </div>
+      </div>
+      <!-- back to top -->
+      <a href="#" id="toTop"><i class="fa-solid fa-plane-up"></i></a>
+    </div>
+  </footer>
+  <!-- modal -->
+  <div class="modal1">
+    <div class="modal-content">
+      <div class="btn_close">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+      <div class="body-content">
+        <div class="modal-left">
+          <img class="img-fluid" src="/img/img2.jpg" alt="">
+          <div class="owl-carousel slide-modal">
+            <div class="img-item"><img src="/img/img2.jpg" alt=""></div>
+            <div class="img-item"><img src="/img/img3.jpg" alt=""></div>
+            <div class="img-item"><img src="/img/img4.jpg" alt=""></div>
+            <div class="img-item"><img src="/img/img5.jpg" alt=""></div>
+            <div class="img-item"><img src="/img/img7.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="modal-right">
+          <h2 class="product-name mb-3">Strawberry Cake</h2>
+          <div class="mb-3">
+            <span>Thương hiệu: </span>Han Bakery <span class="space">|</span> <span>Tình Trạng: </span>Còn hàng
+          </div>
+          <div class="price mb-3">
+            <span class="price-new">500.000đ</span>
+            <span class="price-old">519.000đ</span>
+          </div>
+          <div class="description mb-3">Thông tin sản phẩm đang cập nhật</div>
+          <div class="size mb-3">
+            <span class="mr-4">Kích thước: </span>
+            <input type="radio" id="25CM" name="size" value="25CM" checked>
+            <input type="radio" id="30CM" name="size" value="30CM">
+            <label for="25CM">25CM</label>
+            <label for="30CM">30CM</label>
+          </div>
+          <div class="qty mb-5">
+            <span>Số lượng:</span>
+            <input type="number" value="1">
+            <i class="fa-solid fa-plus plus"></i>
+            <i class="fa-solid fa-minus minus"></i>
+          </div>
+          <button class="btn_add-to-card">Thêm vào giỏ hàng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal 2 -->
+  <div class="modal2">
+    <div class="modal-content">
+      <div class="btn_close">
+        <i class="fa-regular fa-circle-xmark"></i>
+      </div>
+      <span class="title-modal">Sản phẩm đã được thêm vào giỏ hàng</span>
+      <div class="body-content">
+        <div class="product-img">
+          <img class="img-fluid" src="/img/img2.jpg" alt="">
+        </div>
+        <div class="product-info">
+          <h5 class="product-name">Strawberry Cake</h5>
+          <div class="product-price">500.000đ</div>
+          <a class="btn_continue">Tiếp tục mua hàng</a>
+          <a href="/thanhtoan.html" class="btn_pay">Tiến hành Thanh toán</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <!-- owl carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- to top -->
+  <script src="/jquery/toTop.js"></script>
+  <!-- slide -->
+  <script src="/jquery/slideAuto.js"></script>
+  <!-- modal -->
+  <script src="/jquery/modal.js"></script>
+</body>
+
+</html>

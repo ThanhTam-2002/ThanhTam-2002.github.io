@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Cake & Drink</title>
+  <link rel="icon" type="image/x-icon" href="/img/img2.jpg">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/giohang.css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="contact_header">
+              <span>Hotline: </span>
+              <a class="fone" href="tel:19006759">1900 6750</a>
+            </div>
+          </div>
+          <div class="col-6 login-signUp">
+            <div class="row">
+              <div class="header_search col-8">
+                <input type="text" name="" placeholder="Tìm sản phẩm" required>
+                <button class="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+              <div class="account_header col-4">
+                <a href="/dangnhap.html">Đăng nhập</a>
+                <span> & </span>
+                <a href="/dangki.html">Đăng kí</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg  px-0">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.jpg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/index.html"><i class="fa-solid fa-house"></i> Trang chủ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sanpham.html"> <i class="fa-solid fa-cake-candles"></i> Sản phẩm</a>
+
+                <ul class="sub-nav">
+                  <li><a href="#">Món ăn nổi bật</a></li>
+                  <li><a href="#">Món ăn ưa chộng</a></li>
+                  <li><a href="#">món ăn mới</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./gioithieu.html"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html"><i class="fa-solid fa-pen-to-square"></i> Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lienhe.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+              </li>
+            </ul>
+
+            <div class="header-cart">
+              <a class="" href="/giohang.html">
+                <div class="header-cart-left mr-3" type="menu">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="quantity cart_qty">2</span>
+                </div>
+              </a>
+              <div class="header-cart-right">
+                <h6 class="text-cart mb-1">GIỎ HÀNG</h6>
+                <span class="block-count">(<span class="quantity">2</span>) sản phẩm</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- giỏ hàng -->
+  <section class="giohang">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li class="home">
+          <a href="/index.html">Trang chủ</a>
+        </li>
+        <span>&nbsp;/&nbsp;</span>
+        <li>Giỏ hàng</li>
+      </ul>
+      <table class="table-product">
+        <thead>
+          <tr>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Đơn giá</th>
+            <th scope="col">Số lượng</th>
+            <th scope="col">Thành tiền</th>
+            <th scope="col">Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product-img">
+              <img src="/img/img1.jpg" alt="">
+            </td>
+            <td><a class="product-name" href="">Lamington</a></td>
+            <td>
+              <div class="product-price">300.000đ</div>
+            </td>
+            <td>
+              <div class="qty">
+                <i class="fa-solid fa-minus minus"></i>
+                <input type="text" value="1">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+            </td>
+            <td>
+              <div class="product-price">300.000đ</div>
+            </td>
+            <td><a class="btn-remove" href=""><i class="fa-solid fa-trash-can"></i></a></td>
+          </tr>
+          <tr>
+            <td class="product-img">
+              <div>
+                <img src="/img/img2.jpg" alt="">
+              </div>
+            </td>
+            <td><a class="product-name" href="">Strawberry Cake</a></td>
+            <td>
+              <div class="product-price">500.000đ</div>
+            </td>
+            <td>
+              <div class="qty">
+                <i class="fa-solid fa-minus minus"></i>
+                <input type="text" value="2">
+                <i class="fa-solid fa-plus plus"></i>
+              </div>
+
+            </td>
+            <td>
+              <div class="product-price">1.000.000đ</div>
+            </td>
+            <td><a class="btn-remove" href=""><i class="fa-solid fa-trash-can"></i></a></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="row thanhtoan">
+        <div class="col-7">
+          <a href="/sanpham.html" class="continue-btn">Tiếp tục mua hàng</a>
+        </div>
+        <div class="col-5">
+          <div class="total">
+            <span>Tổng tiền thanh toán:</span>
+            <span class="total-price">1.300.000đ</span>
+          </div>
+          <a class="pay-btn" href="/thanhtoan.html">Tiến hành thanh toán</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Liên hệ</h5>
+          <div class="address">
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="content-address">266 Đội Cấn, Phường Liễu Giai, Quận Ba Đình, Hà Nội, Vietnam</div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="content-address">
+                <a href="tel:19006750">1900 6750</a>
+                <p>Thứ 2 - Chủ Nhật 9:00 - 18:00</p>
+              </div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="content-address">
+                <a href="mailto:0308201080@caothang.edu.vn">0308201080@caothang.edu.vn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Hỗ trợ khách hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">Chính sách mua hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <h5 class="title-menu">ĐĂNG KÝ NHẬN TIN</h5>
+          <p class="description">Đăng ký nhận thông tin khuyến mãi và món ăn mới</p>
+          <input type="text" class="form-control" placeholder="Nhập email của bạn">
+          <button class="btnDangki">ĐĂNG KÍ</button>
+        </div>
+      </div>
+      <!-- back to top -->
+      <a href="#" id="toTop"><i class="fa-solid fa-plane-up"></i></a>
+    </div>
+  </footer>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-latest.js"></script>
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- to top -->
+  <script src="/jquery/toTop.js"></script>
+
+</body>
+
+</html>

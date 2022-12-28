@@ -1,0 +1,209 @@
+.modal1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 100;
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 950px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+    margin: 60px auto 0;
+    padding: 24px;
+}
+
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-160px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.btn_close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #ef7147;
+    font-size: 18px;
+    padding: 2px 6px;
+    background-color: #fff1be;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.modal1 .body-content{
+    display: flex;
+}
+.modal-left {
+    width: 50%;
+    border: 1px solid bisque;
+    padding: 10px;
+}
+.modal-right {
+    padding: 0 30px;
+    width: 50%;
+}
+
+.modal-left .img-fluid {
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+.modal-left .img-item {
+    padding: 10px 0;
+    border: 1px solid #ccc;
+}
+/*  */
+
+.modal-right span {
+    font-weight: 600;
+}
+.modal-right .space {
+    padding: 0 5px;
+    font-weight: normal;
+}
+
+.modal-right .price-new {
+    font-size: 28px;
+}
+.modal-right .description {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #999999;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    display: block;
+}
+
+.modal-right .size input {
+    display: none;
+}
+.modal-right label {
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+}
+
+input[name="size"][value="25CM"]:checked~label[for="25CM"] {
+    background-color: #ef7147;
+    color: #fff;
+}
+input[name="size"][value="30CM"]:checked~label[for="30CM"] {
+    background-color: #ef7147;
+    color: #fff;
+}
+
+.qty {
+    position: relative;
+}
+.qty input {
+    width: 100px;
+    height: 48px;
+    text-align: center;
+    margin-left: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.qty .plus {
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    right: 186px;
+    top: 0;
+    border-radius: 0 6px 0 0;
+}
+.qty .minus {
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    right: 186px;
+    bottom: 0;
+    border-radius: 0 0 6px 0;
+}
+.btn_add-to-card {
+    padding: 10px 50px;
+    margin-top: 50px;
+    border: 1px solid #ef7147;
+    background-color: #ef7147;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 6px;
+}
+.btn_add-to-card:hover {
+    background-color: #fff;
+    color: #ef7147;
+}
+
+/* modal 2 */
+.modal2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    z-index: 100;
+}
+.modal2 .modal-content {
+    background-color: #fff;
+    width: 600px;
+    animation: modalFadeIn ease 0.5s;
+    padding: 0 30px 20px;
+}
+
+.modal2 .title-modal {
+    font-size: 24px;
+    color: #ef7147;
+    padding: 10px 0 20px;
+    text-align: center;
+}
+.modal2 .body-content{
+    display: flex;
+}
+.modal2 .product-img {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.modal2 .product-info{
+    width: 80%;
+    margin-left: 10px;
+}
+
+.product-price{
+    color: #ef7147;
+    margin-bottom: 10px;
+}
+.modal2 .btn_continue,
+.modal2 .btn_pay {
+    padding: 8px 16px;
+    background-color: #ef7147;
+    border: 1px solid #ef7147;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.btn_continue:hover,
+.btn_pay:hover{
+    background-color: #fff;
+    color: #ef7147;
+}
