@@ -43,8 +43,3 @@
 .lienhe .content-address a{
     color: black;
 }
-@media screen and (max-width:991.98px){
-     .hienhe-left{
-        display: none;
-     }  
-}

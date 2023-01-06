@@ -4,7 +4,6 @@
 }
 .checkout-left{
     width: 65%;
-    padding-left: 10%;
     padding: 20px 20px 100px 120px;
     background-color: aliceblue;
 }
@@ -30,15 +29,10 @@
 .checkout_info .login:hover{
     color: black;
 }
-.checkout_info select{
-    width: 100%;
-}
 .checkout_info textarea{
-    width: 100%;
     min-height: 100px;
     padding: 10px;
 }
-
 .checkout_shipping .vanchuyen{
     border: 1px solid #ccc;
     padding: 10px;
