@@ -3,7 +3,7 @@ $(function () {
     $('.slide-noi-bat').owlCarousel({
         loop: true,
         margin: 10,
-        // dots: true,
+        dots: true,
         autoplay: true,
         autoplayTimeout: 4000,
         responsive: {

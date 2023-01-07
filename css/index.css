@@ -52,7 +52,7 @@
     content: "";
     width: 220px;
     position: absolute;
-    border: 1px dashed #c3c3c3;
+    border: 0.75px dashed #c3c3c3;
     top: 50%;
     right: -240px;
 }
